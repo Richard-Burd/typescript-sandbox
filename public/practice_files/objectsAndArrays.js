@@ -3,7 +3,7 @@
 // https://www.youtube.com/watch?v=157NopQ-chU&list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI&index=4
 // We cannot make an array of one type (strings) then add elements to it that
 // are of another data type (i.e. integers)
-var namesTwo = ['ron', 'tom', 'dan', 'sam'];
+let namesTwo = ['ron', 'tom', 'dan', 'sam'];
 // this will work but...
 namesTwo.push('cat');
 // this will NOT work
@@ -12,13 +12,13 @@ namesTwo.push('cat');
 //   - error TS2345: Argument of type '12' is not assignable to parameter of type 'string'.
 // This will work just fine because we're adding an integer onto an array that
 // already includes integers and numbers
-var mixedDataTypes = [1, "tom", 3, "cat"];
+let mixedDataTypes = [1, "tom", 3, "cat"];
 mixedDataTypes.push(4);
 mixedDataTypes.push("alf");
 mixedDataTypes[0] = "1";
 // NOW LET'S LOOK AT OBJECTS
 // we cannot change the data type for any of values of these keys
-var ninjaFour = {
+let ninjaFour = {
     name: 'mario',
     belt: 'black',
     age: 30

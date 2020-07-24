@@ -2,11 +2,19 @@
 
 https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI
 
-Left off here on Lesson 14- Modules:
-https://www.youtube.com/watch?v=OsFwOzr3_sE&list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI&index=14
+Left off here on Lesson 16- Interfaces with Classes:
+https://www.youtube.com/watch?v=XPGFqx8Vg-Y&list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI&index=16
 
+Remember to fire up the server now.
 
 ## Commands:
+This will fire up the server provided by the `npm install -g http-server` command
+`redburd@ubuntu ~/Desktop/dev/3/typescript-sandbox (master) $ http-server -c-1`
+
+This will check for changes in Typescript and update the JavaScript files in real time:
+`redburd@ubuntu ~/Desktop/dev/3/typescript-sandbox (master) $ tsc -w`
+
+
 `redburd@ubuntu ~/Desktop/dev/3 $ sudo npm install -g typescript`
 
 `redburd@ubuntu ~/Desktop/dev/3/typescript-sandbox $ tsc -w`
