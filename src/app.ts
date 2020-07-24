@@ -1,5 +1,61 @@
-// Left off on Lesson 12 - Classes
+// Left off on Lesson 12 & 13 - Classes
 // https://www.youtube.com/watch?v=OsFwOzr3_sE&list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI&index=12
+
+class Invoice {
+  client: string;
+
+  // "private" means you cannot alter or see this class instance variable outside of the class
+  private details: string;
+
+  // "public" an access modifier; all class instance variables are public by default
+  public amount: number;
+
+  // "readonly" means you cannot write it outside the class
+  readonly address: string;
+
+  // this is repeditive and is not actually used if you have access modifiers in front
+  // of each & every class instance variable--------------------------------------------
+  constructor(c: string, d: string, a: number, b: string){
+    this.client = c;
+    this.details = d;
+    this.amount = a;
+    this.address = b;
+  }
+  format(){
+    return `${this.client} owes $${this.amount} for ${this.details} at ${this.address}`
+  }
+}
+
+// This is the ideal way to format an instance class:
+class BetterInvoice{
+  constructor(
+    readonly client: string,
+    private details: string,
+    public amount: number,
+  ){} // always remember you need these brackets!!!
+}
+
+const invOne = new Invoice("Tom", "work on website", 250, "Elm St.")
+const invTwo = new Invoice("Dan", "work on server", 350, "Oak St.")
+
+// right now, only objects created with the Invoice class can be added to this array
+let invoices: Invoice[] = [];
+invoices.push(invOne);
+invoices.push(invTwo);
+
+// we can still modify these class instances because we don't have any access modifiers
+invOne.client = "Tom"
+invTwo.amount = 721
+// an array of the two invoices with modifications
+console.log(invoices);
+
+invoices.forEach(inv => {
+  // this doesn't work with the class instance method "details" being private
+  //console.log(inv.details);
+
+  console.log(inv.format());
+});
+
 
 // during development, TypeScript doesn't know if this anchor actually exists...
 //........................................! <= if I know this exists-----//

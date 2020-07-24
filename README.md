@@ -2,14 +2,14 @@
 
 https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI
 
-Left off here on Lesson 12- Classes:
-https://www.youtube.com/watch?v=OsFwOzr3_sE&list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI&index=12
+Left off here on Lesson 14- Modules:
+https://www.youtube.com/watch?v=OsFwOzr3_sE&list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI&index=14
 
 
 ## Commands:
 `redburd@ubuntu ~/Desktop/dev/3 $ sudo npm install -g typescript`
 
-`redburd@ubuntu ~/Desktop/dev/3/typescript-sandbox $ tsc`
+`redburd@ubuntu ~/Desktop/dev/3/typescript-sandbox $ tsc -w`
 Now that the `tscongif.json` file has been modified, this will compile all `.ts` files in the `./src` directory into `.js` files in the `./public` directory.
 
 Since typescript has been installed, we can compile the .ts file into the .js file.
