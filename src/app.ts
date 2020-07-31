@@ -95,7 +95,7 @@ enum ResourceType { BOOK, AUTHOR, FILM, DIRECTOR };
 
 interface SecondResource<T> {
   uid: number;
-  resourceType: number;
+  resourceType: ResourceType;
   data: T;
 }
 
@@ -108,7 +108,7 @@ const docFive: SecondResource<object> = {
 const docSix: SecondResource<object> = {
   uid: 12934002,
   resourceType: ResourceType.AUTHOR, // ............ ResourceType[1]
-  data: { title: 'name of the wind' }
+  data: { title: 'name of the sea' }
 }
 
 console.log(docFive); // ........................... ResourceType[0]
@@ -125,3 +125,31 @@ myArray[0] = "I can be a string or any other data type"; // ... so this kind of 
 // notice ":" as opposed to "=" used to define an array:
 let myTuple: [string, number, boolean] = ["a string", 34, false];
 myTuple[0] = "I have to be a string!"
+console.log(myTuple);
+
+///////////////////////////Practice/////////////////////////////////
+
+const specialFunction = (myVar: number) => {
+  if (myVar === 2) {
+    let x = 12
+    console.log(x + myVar);
+  } else {
+    console.log("Failure");
+  }
+}
+
+specialFunction(2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////

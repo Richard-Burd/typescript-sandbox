@@ -78,7 +78,7 @@ const docFive = {
 const docSix = {
     uid: 12934002,
     resourceType: ResourceType.AUTHOR,
-    data: { title: 'name of the wind' }
+    data: { title: 'name of the sea' }
 };
 console.log(docFive); // ........................... ResourceType[0]
 console.log(docSix); // ............................ ResourceType[1]
@@ -91,3 +91,6 @@ myArray[0] = "I can be a string or any other data type"; // ... so this kind of 
 // notice ":" as opposed to "=" used to define an array:
 let myTuple = ["a string", 34, false];
 myTuple[0] = "I have to be a string!";
+console.log(myTuple);
+///////////////////////////Practice/////////////////////////////////
+////////////////////////////////////////////////////////////////////////

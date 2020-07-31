@@ -1,47 +1,14 @@
-#TypeScript Sandbox
+# TypeScript Sandbox
+This is a sandbox to fool around with and learn TypeScript.&nbsp; It follows the video tutorial series [here](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI) by the Net Ninja.
 
-https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI
+## Getting Started:
+This repo is an almost identical copy of this one [here](https://github.com/iamshaunjp/typescript-tutorial/tree/lesson-10) with more notes etched out in the comments.&nbsp; To fire it up, clone it locally and run these commands:
+1. `$ npm install -g http-server` To get a server going (globally) if you don't already have one set up.
+2. `$ sudo npm install -g typescript` To get TypeScript installed globally as well
+3. `$ tsc -w` **(in the repo directory)** To get the TypeScript fired up and running
+4. `$ http-server -c-1` **(in the repo directory)** To fire up the server
 
-Left off here on Lesson 16- Interfaces with Classes:
-https://www.youtube.com/watch?v=XPGFqx8Vg-Y&list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI&index=16
-
-Remember to fire up the server now.
-
-## Commands:
-This will fire up the server provided by the `npm install -g http-server` command
-`redburd@ubuntu ~/Desktop/dev/3/typescript-sandbox (master) $ http-server -c-1`
-
-This will check for changes in Typescript and update the JavaScript files in real time:
-`redburd@ubuntu ~/Desktop/dev/3/typescript-sandbox (master) $ tsc -w`
-
-
-`redburd@ubuntu ~/Desktop/dev/3 $ sudo npm install -g typescript`
-
-`redburd@ubuntu ~/Desktop/dev/3/typescript-sandbox $ tsc -w`
-Now that the `tscongif.json` file has been modified, this will compile all `.ts` files in the `./src` directory into `.js` files in the `./public` directory.
-
-Since typescript has been installed, we can compile the .ts file into the .js file.
-This way the browser can use it.
-`redburd@ubuntu ~/Desktop/dev/3/typescript-sandbox/src $ tsc sandbox.ts sandbox.js`
-
-Because the .ts and .js file have the same name, we can shortenit:
-`redburd@ubuntu ~/Desktop/dev/3/typescript-sandbox/src $ tsc sandbox.ts`
-
-This tells node to watch the .ts file and update the .js file each time the .ts file changes:
-`redburd@ubuntu ~/Desktop/dev/3/typescript-sandbox/src $ tsc sandbox.ts -w`
-
-This will initialize a configuration file called `tsconfig.json`:
-`redburd@ubuntu ~/Desktop/dev/3/typescript-sandbox $ tsc --init`
-Next, follow these options:
-
-1. inside `tsconfig.json` un-comment `"rootDir": "./"` and change it to read: `"rootDir": "./src",`
-
-2. inside `tsconfig.json` un-comment  `"outDir": "./"` and change it to read: `"outDir": "./public",`
-
-3. move `index.html` and `style.css` into `./public`
-
-4. add the following to `tsconfig.json` in order to make sure only .ts files in the `./src` directory are compiled into a .js file: `"include": ["src"] /* only compile .ts files that are in the './src' file`
-
-
-Repo:
-https://github.com/iamshaunjp/typescript-tutorial/tree/lesson-2
+## Cool Graphics:
+Here is my master cheat-sheet for TypeScript so far:
+![a massive cheat sheet showing TypeScript details](https://i.imgur.com/iC3tcSq.jpg)
+Now that I have a cheat-sheet going, my next step is to implement TypeScript in my [Front End Portfolio Project](https://github.com/Richard-Burd/front-end-portfolio-project); specifically, to build out [these JavaScript class objects](https://github.com/Richard-Burd/front-end-portfolio-project/blob/master/front-end/src/objects.js) in TypeScript.
