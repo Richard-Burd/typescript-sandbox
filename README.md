@@ -10,5 +10,5 @@ This repo is an almost identical copy of this one [here](https://github.com/iams
 
 ## Cool Graphics:
 Here is my master cheat-sheet for TypeScript so far:
-![a massive cheat sheet showing TypeScript details](https://i.imgur.com/iC3tcSq.jpg)
+![a massive cheat sheet showing TypeScript details](https://i.imgur.com/kgk56v9.jpg)
 Now that I have a cheat-sheet going, my next step is to implement TypeScript in my [Front End Portfolio Project](https://github.com/Richard-Burd/front-end-portfolio-project); specifically, to build out [these JavaScript class objects](https://github.com/Richard-Burd/front-end-portfolio-project/blob/master/front-end/src/objects.js) in TypeScript.
